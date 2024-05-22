@@ -34,6 +34,7 @@ const itemSchema = new mongoose.Schema({
 const Item = mongoose.model('Item', itemSchema);
 
 // CRUD routes
+app.get("/", (req, res) => {res.json("Hello") }) ;
 
 // Create
 app.post('/items', async (req, res) => {
