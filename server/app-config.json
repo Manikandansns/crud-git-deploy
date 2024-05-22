@@ -1,0 +1,8 @@
+{
+	"command": "node index.js",
+	"build_path": "D:\\study\\Crud-operation-demo\\server",
+	"stack": "node18",
+	"env_variables": {},
+	"memory": 256,
+	"scripts": {}
+}

@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "7374000000005278",
+      "name": "crud-operation-demo",
+      "domain": {
+        "id": "50019457054",
+        "name": "crud-operation-demo-60029555784.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60029555784",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
