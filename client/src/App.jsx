@@ -7,6 +7,7 @@ function App() {
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [editItem, setEditItem] = useState(null);
+  axios.defaults.withCredentials = true; 
 
   // Fetch items
   useEffect(() => {
