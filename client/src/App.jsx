@@ -16,7 +16,7 @@ function App() {
 
   const fetchItems = async () => {
     try {
-      const response = await axios.get('https://appsail-50019457054.development.catalystappsail.in/items');
+      const response = await axios.get('crud-git-deploy-backend.vercel.app/items');
       setItems(response.data);
     } catch (error) {
       console.error('Error fetching items:', error);
@@ -26,7 +26,7 @@ function App() {
   // Create item
   const createItem = async () => {
     try {
-      const response = await axios.post('https://appsail-50019457054.development.catalystappsail.in/items', {
+      const response = await axios.post('crud-git-deploy-backend.vercel.app/items', {
         name,
         description,
       });
@@ -41,7 +41,7 @@ function App() {
   // Update item
   const updateItem = async (id) => {
     try {
-      const response = await axios.put(`https://appsail-50019457054.development.catalystappsail.in/items/${id}`, {
+      const response = await axios.put(`crud-git-deploy-backend.vercel.app/items/${id}`, {
         name,
         description,
       });
@@ -57,7 +57,7 @@ function App() {
   // Delete item
   const deleteItem = async (id) => {
     try {
-      await axios.delete(`https://appsail-50019457054.development.catalystappsail.in/items/${id}`);
+      await axios.delete(`crud-git-deploy-backend.vercel.app/items/${id}`);
       setItems(items.filter((item) => item._id !== id));
     } catch (error) {
       console.error('Error deleting item:', error);
