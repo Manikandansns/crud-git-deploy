@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Connect to MongoDB
-mongoose.connect(process.env.URI);
+mongoose.connect('mongodb+srv://Manikandan:swathy%4020@cluster0.tiesao1.mongodb.net/crud-operation-demo?retryWrites=true&w=majority&appName=Cluster0');
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -78,7 +78,7 @@ app.delete('/items/:id', async (req, res) => {
 });
 
 // Start the server
-const PORT = process.env.X_ZOHO_CATALYST_LISTEN_PORT || 5000;
+const PORT = process.env.PORT|| 5000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
